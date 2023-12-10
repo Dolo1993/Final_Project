@@ -16,7 +16,40 @@ stack = []      # Creating an empty stack
 stack.append(1)  # Pushing 1 onto the stack
 stack.append(2)  # Pushing 2 onto the stack
 stack.append(3)  # Pushing 3 onto the stack  
-The output of this stack are #[1, 2, 3]
+The output of this stack are #[1, 2, 3] 
+
+Initial Stack: []
+--------------
+|            |
+|            |
+|            |
+--------------
+
+After stack.append(1):
+--------------
+|     1      |
+--------------
+|            |
+|            |
+--------------
+
+After stack.append(2):
+--------------
+|     2      |
+--------------
+|     1      |
+--------------
+|            |
+--------------
+
+After stack.append(3):
+--------------
+|     3      |
+--------------
+|     2      |
+--------------
+|     1      |
+-------------- 
 
 ```  
 #### 2. Pop operation 
@@ -37,7 +70,27 @@ print("Updated Stack:", stack)
 print("Removed Element:", removed_element)
 Original Stack: #[1, 2, 3]  
 Updated Stack: #[1, 2]
-Removed Element: # 3 
+Removed Element: # 3  
+
+# Diagram
+Original Stack: [1, 2, 3]
+-------------------------
+|           3           |
+-------------------------
+|           2           |
+-------------------------
+|           1           |
+-------------------------
+
+After stack.pop():
+Updated Stack: [1, 2]
+-------------------------
+|           2           |
+-------------------------
+|           1           |
+-------------------------
+
+Removed Element: 3
 
 ``` 
 #### 3. Implementation in Python 
